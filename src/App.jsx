@@ -4,9 +4,9 @@ import About from './components/about/About';
 import Carousel from './components/carousel/Carousel';
 import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer';
-import Navbar from './components/navbar/navbar';
+import Navbar from './components/navbar/Navbar';
 import Products from './components/products/Products';
-import Services from './components/services/services';
+import Services from './components/services/Services';
 
 function App() {
   const homeRef = useRef(null);
