@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { FaHeart } from 'react-icons/fa';
 
-const ProductCard = ({ image, title, description, price }) => {
+const ProductCard = ({ image, name, description, price }) => {
   const [liked, setLiked] = useState(false);
 
   return (
@@ -26,7 +26,7 @@ const ProductCard = ({ image, title, description, price }) => {
         {/* Product Image */}
         <img
           src={image}
-          alt={title}
+          alt={name}
           className="w-full h-80 object-cover transform transition-transform duration-500 group-hover:scale-105"
         />
 
@@ -38,7 +38,7 @@ const ProductCard = ({ image, title, description, price }) => {
       <div className="p-6 flex flex-col flex-grow justify-between">
         <div className="flex justify-between items-start mb-3">
           <h3 className="text-xl font-bold text-gray-800 group-hover:text-amber-600 transition-colors duration-300">
-            {title}
+            {name}
           </h3>
           <span className="text-2xl font-bold text-amber-600">${price}</span>
         </div>
